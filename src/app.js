@@ -36,8 +36,8 @@ module.exports = function(opts) {
 		app.use(express.errorHandler());
 	}
 	
-	app.use(function(req, res) {
-		res.render('index', { title: 'Express' });
+	app.use(function(req, res, next) {
+		res.render('index', { title: req.url });
 	});
 	
 	return app;
