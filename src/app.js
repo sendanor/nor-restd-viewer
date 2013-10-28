@@ -37,7 +37,10 @@ module.exports = function(opts) {
 	}
 	
 	app.use(function(req, res, next) {
-		res.render('index', { title: req.url, 'code':'{"foo":"bar"}', 'codelang':'javascript' });
+
+		req.locals.body = JSON.stringify(req.locals.body, null, 2).replace(/(\"\$ref" *: *)\"([^\"]+)\"/g, '$1"<a href="$2">$2</a>"');
+
+		res.render('index', { title: req.url, 'code':req.locals.body, 'codelang':'javascript' });
 	});
 	
 	return app;
