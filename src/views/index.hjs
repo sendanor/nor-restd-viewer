@@ -6,8 +6,6 @@
 	<link rel='stylesheet' href='{{ plugin.url.pathname }}/stylesheets/style.css' />
 </head>
 <body>
-	<h1>{{ title }}</h1>
-
 	<code class="prettyprint lang-{{ codelang }}">{{ code }}</code>
 
 	<script src="{{ plugin.url.pathname }}/libs/google-code-prettify/run_prettify.js"></script>

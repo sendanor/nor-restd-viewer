@@ -37,7 +37,7 @@ module.exports = function(opts) {
 	}
 	
 	app.use(function(req, res, next) {
-		res.render('index', { title: req.url });
+		res.render('index', { title: req.url, 'code':'{"foo":"bar"}', 'codelang':'javascript' });
 	});
 	
 	return app;
