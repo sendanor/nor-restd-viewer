@@ -29,25 +29,6 @@ module.exports = function(opts) {
 	
 	app.use(app.router);
 
-	/** Removes temporarily `from_path` from `req.url` */
-	/*
-	function strip_url_path(from_path, mod) {
-		function wrapper(req, res, next) {
-
-			var orig_url = req.url;
-			util.debug('req.url (before) = ' + util.inspect(req.url));
-			function do_next() {
-				req.url = orig_url;
-				return next.apply(undefined, Array.prototype.slice.call(arguments) );
-			}
-			req.url = req.url.substr( from_path.length );
-			util.debug('req.url (after) = ' + util.inspect(req.url));
-			return mod(req, res, do_next);
-		}
-		return wrapper;
-	}
-	*/
-	
 	app.use('/public', express.static(path.join(__dirname, 'public')) );
 
 	// development only
