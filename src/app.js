@@ -29,7 +29,7 @@ module.exports = function(opts) {
 	
 	app.use(app.router);
 
-	app.use('/public', express.static(path.join(__dirname, 'public')) );
+	app.use(express.static(path.join(__dirname, 'public')));
 
 	// development only
 	if ('development' === app.get('env')) {
