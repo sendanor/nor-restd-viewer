@@ -1,4 +1,4 @@
 nor-restd-viewer
 ================
 
-Viewer module for Sendanor REST Daemon
+The viewer module for [nor-restd](https://github.com/sendanor/nor-restd).
