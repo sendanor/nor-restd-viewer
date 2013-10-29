@@ -1,7 +1,7 @@
 {
   "name": "nor-restd-viewer",
   "description": "Viewer module for Sendanor REST Daemon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "src/app.js",
   "dependencies": {
     "express": "3.4.0",
