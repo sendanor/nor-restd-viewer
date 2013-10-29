@@ -38,7 +38,7 @@ module.exports = function(opts) {
 	
 	app.use(function(req, res, next) {
 
-		req.locals.body = JSON.stringify(req.locals.body, null, 2).replace(/(\"(https?:[^\"]+)\"/g, '$1"<a href="$2">$2</a>"');
+		req.locals.body = JSON.stringify(req.locals.body, null, 2).replace(/\"(https?:[^\"]+)\"/g, '"<a href="$1">$1</a>"');
 
 		res.render('index', { title: req.url, 'code':req.locals.body, 'codelang':'javascript' });
 	});
