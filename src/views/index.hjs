@@ -15,11 +15,11 @@
 	<div class="content pure-g-r">
 
 		<div class="pure-u-1-2">
-			<h3>Code</h3>
+			<h3>Content</h3>
 			<code class="prettyprint lang-{{ codelang }}">{{{ code }}}</code>
 		</div>
 
-		<div class="headers pure-u-1-2">
+		<div class="pure-u-1-2">
 			<h3>Headers</h3>
 			<code></code>
 		</div>
@@ -27,7 +27,7 @@
 	</div>
 
 	<div class="footer">
-	Powered by <a href="https://github.com/sendanor/nor-restd-viewer">nor-restd-viewer</a>
+	Powered by <a href="https://github.com/sendanor/nor-restd">nor-restd</a>
 	</div>
 
 	<script src="{{ plugin.url.pathname }}/libs/google-code-prettify/run_prettify.js"></script>
