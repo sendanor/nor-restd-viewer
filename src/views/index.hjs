@@ -7,11 +7,17 @@
 </head>
 <body>
 
+<div class="content">
+
 <code class="prettyprint lang-{{ codelang }}">{{{ code }}}</code>
 
 <script src="{{ plugin.url.pathname }}/libs/google-code-prettify/run_prettify.js"></script>
 
-<a href="https://github.com/sendanor/nor-restd-viewer"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+</div>
+
+<div class="footer">
+Powered by <a href="https://github.com/sendanor/nor-restd-viewer">nor-restd-viewer</a>
+</div>
 
 </body>
 </html>
