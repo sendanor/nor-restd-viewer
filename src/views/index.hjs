@@ -6,18 +6,32 @@
 	<link rel='stylesheet' href='{{ plugin.url.pathname }}/stylesheets/style.css' />
 </head>
 <body>
+<div class="container">
 
-<div class="content">
+	<div class="header">
+		<h1>{{ title }}</h1>
+	</div>
 
-<code class="prettyprint lang-{{ codelang }}">{{{ code }}}</code>
+	<div class="content pure-g-r">
 
-<script src="{{ plugin.url.pathname }}/libs/google-code-prettify/run_prettify.js"></script>
+		<div class="pure-u-1-2">
+			<h3>Code</h3>
+			<code class="prettyprint lang-{{ codelang }}">{{{ code }}}</code>
+		</div>
+
+		<div class="headers pure-u-1-2">
+			<h3>Headers</h3>
+			<code></code>
+		</div>
+
+	</div>
+
+	<div class="footer">
+	Powered by <a href="https://github.com/sendanor/nor-restd-viewer">nor-restd-viewer</a>
+	</div>
+
+	<script src="{{ plugin.url.pathname }}/libs/google-code-prettify/run_prettify.js"></script>
 
 </div>
-
-<div class="footer">
-Powered by <a href="https://github.com/sendanor/nor-restd-viewer">nor-restd-viewer</a>
-</div>
-
 </body>
 </html>

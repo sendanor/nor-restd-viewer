@@ -1,8 +1,19 @@
 
 body {
 	margin: 10px;
+	background-color: #eeeeee;
 }
 
 code {
 	white-space: pre;
+}
+
+.content {
+	background-color: #ffffff;
+}
+
+.footer {
+	font-size: 0.8em;
+	background-color: #eeeeee;
+	border-top: 1px solid black;
 }
