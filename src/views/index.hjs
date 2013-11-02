@@ -31,6 +31,10 @@
 	</div>
 
 	<script src="{{ plugin.url.pathname }}/libs/google-code-prettify/run_prettify.js"></script>
+	<script src="{{ plugin.url.pathname }}/libs/jquery/jquery-1.10.2.js"></script>
+	<script src="{{ plugin.url.pathname }}/libs/riotjs/riot.js"></script>
+	<script src="{{ plugin.url.pathname }}/javascripts/model.js"></script>
+	<script src="{{ plugin.url.pathname }}/javascripts/presenter.js"></script>
 
 </div>
 </body>

@@ -1,21 +1,29 @@
+/* nor-restd-viewer styles */
 
 body {
 	background-color: #f5f5f5;
 }
 
+.header {
+	padding: 5px 35px 5px 35px;
+	color: #ffffff;
+	background-color: #000000;
+}
+
 .content {
 	background-color: #ffffff;
-	padding: 10px;
+	padding: 5px 10px 30px 10px;
 }
 
 .footer {
-	margin: 10px;
-	padding: 10px;
 	text-align: center;
 	font-size: 0.8em;
-	border-top: 1px solid black;
+	padding-top: 10px;
+	border-top: 10px solid black;
 }
 
 code {
 	white-space: pre;
 }
+
+/* EOF */
